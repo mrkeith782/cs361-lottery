@@ -10,6 +10,7 @@ var app = express();
 var port = process.env.PORT || 3000;
 
 app.engine('handlebars', express_handlebars({defaultLayout: 'skeleton'}));
+app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'handlebars');
 
 //Main webpage
