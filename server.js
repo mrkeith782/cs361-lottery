@@ -14,7 +14,7 @@ app.set('view engine', 'handlebars');
 
 //Main webpage
 app.get('/', function (req, res, next) {
-    res.render('404');
+    res.render('partials/main');
     res.status(200);
 });
 
